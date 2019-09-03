@@ -7,7 +7,7 @@ import UIKit
 
 /// Protocol to allow to present a plugin and wait for a response in that plugin.
 /// Using this protocol you can present in your plugin another plugin and take a result from there. This is useful to present modally other plugins, or to insert a screen between the flow of another plugin.
-public protocol PluginPresenterProtocol {
+@objc public protocol PluginPresenterProtocol {
     
     /// Completion closure used when the plugin finishes to present.
     ///   - success: true in case the plugin presented with success, false otherwise.
